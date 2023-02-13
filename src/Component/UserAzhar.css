@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* padding: 10px 50px; */
+    display: flex;
+}
+
+.aside{
+    width: 18%;
+    height: 85vh;
+    border-radius: 20px;
+    margin-left: 60px;
+    background-color: rgb(69, 81, 200);
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+/* .aside ul{
+    margin: 0;
+    padding: 0;
+} */
+
+.aside li{
+    list-style-type: none;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    text-decoration: none;
+}
+
+.aside li::before{
+    content: "";
+    position: absolute;
+    width: 14rem ;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.6);
+    bottom: 0px;
+}
+
+
+/* ============================ Center Part ================================== */
+/* ============================ Center Part ================================== */
+
+.profile{
+    width: 78%;
+    position: relative;
+    padding: 0 70px;
+}
+.profile .proTitle h1{
+    color:#545454;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile .proTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+.profile .proTitle::before{
+    content: "";
+    position: absolute;
+    width: 74rem;
+    border-bottom: 1px solid #c8c6c6;
+    bottom: -25px;
+}
+
+.profile .proLogin{
+    display: flex;
+    align-items: center;
+}
+
+.profile .proLogin img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.profile .proLogin span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #545454;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* ===================profile main detail left =================*/
+.proMain{
+    display: flex;
+    margin: 70px 0;
+}
+.userDetail{
+    width: 28rem;
+    text-align: center;
+    position: relative;
+}
+
+.userDetail .image img{
+    width: 13rem ;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.userDetail .detail1{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #a4a4a4;
+    padding: 0px 20px;
+    position: relative;
+}
+.userDetail .detail1::before{
+    content: "";
+    position: absolute;
+    width: 21rem;
+    border-bottom: 1px solid #a4a4a4;
+    bottom: 0;
+}
+.userDetail .detail2{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #a4a4a4;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.userDetail .deright{
+    text-align: left;
+    color: #545454;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.userDetail li{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.userDetail .company h3{
+    color:#a4a4a4;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* ==================================Address section ================================== */
+
+.address{
+    margin-left: 40px;
+}
+.address .add2{
+    display: flex;
+    text-align: right;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #a4a4a4;
+    padding: 0px 50px;
+    position: relative;
+}
+
+.address .deright{
+    text-align: left;
+    color: #545454;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.add2 li{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.address h3{
+    color:#a4a4a4;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+
+.address img{
+    width: 43rem;
+    height: 24rem;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-left: 40px;
+
+}
+
+.address .addLatitude{
+    display: flex;
+    justify-content: end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #a4a4a4;
+}
+
+.address .addLatitude .lat{
+    margin-right: 20px;
+}
+.address .addLatitude .strong{
+    font-weight: bold;
+    color: #545454;
+}
+
+/*=========================== drop down button===================== */
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-left: 566px;
+}
+
